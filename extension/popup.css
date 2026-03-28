@@ -1,0 +1,74 @@
+:root {
+  color-scheme: light dark;
+  font-family: Inter, Segoe UI, Roboto, sans-serif;
+}
+body {
+  margin: 0;
+  width: 350px;
+  background: #111827;
+  color: #f3f4f6;
+}
+main {
+  padding: 14px;
+}
+h1 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+.sub {
+  margin-top: 2px;
+  opacity: 0.8;
+  font-size: 0.82rem;
+}
+.card {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.label {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+.score {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.band {
+  font-size: 0.9rem;
+}
+h2 {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+}
+ul {
+  margin: 0;
+  padding-left: 18px;
+}
+li {
+  margin-bottom: 4px;
+  font-size: 0.86rem;
+}
+#explanation {
+  margin: 0;
+  font-size: 0.86rem;
+  line-height: 1.4;
+}
+.actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+button {
+  border: none;
+  background: #3b82f6;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+button:hover {
+  background: #2563eb;
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IntentMirror</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <h1>IntentMirror</h1>
+      <p class="sub">Behavioral Attack Surface Analysis</p>
+
+      <section id="score-card" class="card">
+        <div class="label">Decision Hijack Score</div>
+        <div id="score" class="score">--</div>
+        <div id="band" class="band">Waiting for analysis…</div>
+      </section>
+
+      <section class="card">
+        <h2>Detected vectors</h2>
+        <ul id="categories"></ul>
+      </section>
+
+      <section class="card">
+        <h2>Explanation</h2>
+        <p id="explanation">Open a webpage to run analysis.</p>
+      </section>
+
+      <div class="actions">
+        <button id="open-dashboard">Open Dashboard</button>
+      </div>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

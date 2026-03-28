@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "IntentMirror",
+  "description": "Behavioral cybersecurity for human decision integrity.",
+  "version": "0.1.0",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "IntentMirror",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["dashboard.html", "dashboard.css", "dashboard.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

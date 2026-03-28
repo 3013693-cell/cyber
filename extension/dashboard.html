@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IntentMirror Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <header>
+      <h1>IntentMirror Dashboard</h1>
+      <p>Behavioral attack surface history and trend overview.</p>
+    </header>
+
+    <main>
+      <section class="grid">
+        <article class="card">
+          <h2>Total scans</h2>
+          <p id="total-scans" class="stat">0</p>
+        </article>
+        <article class="card">
+          <h2>Average score</h2>
+          <p id="avg-score" class="stat">0</p>
+        </article>
+        <article class="card">
+          <h2>High-risk pages</h2>
+          <p id="high-risk" class="stat">0</p>
+        </article>
+      </section>
+
+      <section class="card">
+        <h2>Most common manipulation vectors</h2>
+        <ul id="vector-list"></ul>
+      </section>
+
+      <section class="card">
+        <div class="row">
+          <h2>Recent reports</h2>
+          <button id="clear-reports">Clear history</button>
+        </div>
+        <div id="report-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Host</th>
+                <th>Score</th>
+                <th>Vectors</th>
+                <th>Explanation</th>
+              </tr>
+            </thead>
+            <tbody id="reports-body"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>
